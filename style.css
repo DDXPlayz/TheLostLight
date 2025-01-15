@@ -209,3 +209,38 @@ body {
     width: 40px;
   }
 }
+
+/* Music Player Controls for Mobile */
+@media (max-width: 768px) {
+  .controls button {
+    width: 60px; /* Increase button size */
+    aspect-ratio: 1/1;
+    font-size: 1.5rem; /* Increase icon size */
+    margin: 10px; /* Reduce margin for better spacing */
+  }
+
+  .controls button:nth-child(2) {
+    transform: scale(1.5); /* Slightly larger play/pause button */
+  }
+
+  .controls button:nth-child(2):is(:hover, :focus-visible) {
+    transform: scale(1.4); /* Adjust hover effect */
+  }
+
+  #progress {
+    height: 10px; /* Increase progress bar height */
+  }
+
+  .music-player {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 20px; /* Add more padding */
+  }
+
+  .music-player h1 {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .music-player p {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
