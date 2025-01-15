@@ -65,7 +65,7 @@ const songs = [
   },
   {
   title: "Let go",
-  name: "DDPlayz",
+  name: "DDXPlayz",
   source:
     "Songs/Let_Go-audio.mp3",
   }
