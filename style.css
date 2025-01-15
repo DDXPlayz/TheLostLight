@@ -41,11 +41,12 @@ body {
 
 .album-cover {
   width: 90%;
+  max-width: 1200px;
 }
 
 .swiper {
   width: 100%;
-  padding: 40px 0 100px;
+  padding: 20px 0 50px;
 }
 
 .swiper-slide {
@@ -102,21 +103,25 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--primary-clr);
-  width: 380px;
-  padding: 10px 30px;
+  width: 90%;
+  max-width: 400px;
+  padding: 10px 20px;
   border-radius: 20px;
+  margin-top: 20px;
 }
 
 .music-player h1 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.6;
+  text-align: center;
 }
 
 .music-player p {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.6;
+  text-align: center;
 }
 
 /* Music Player Progress */
@@ -128,7 +133,7 @@ body {
   height: 7px;
   background: rgba(163, 162, 164, 0.4);
   border-radius: 4px;
-  margin: 32px 0 24px;
+  margin: 20px 0;
   cursor: pointer;
 }
 
@@ -157,7 +162,7 @@ body {
   justify-content: center;
   width: 50px;
   aspect-ratio: 1/1;
-  margin: 20px;
+  margin: 10px;
   background: rgba(163, 162, 164, 0.3);
   color: var(--primary-clr);
   border-radius: 50%;
@@ -179,4 +184,28 @@ body {
 
 .controls button:nth-child(2):is(:hover, :focus-visible) {
   transform: scale(1.25);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .swiper-slide {
+    max-width: 150px;
+  }
+
+  .music-player {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .music-player h1 {
+    font-size: 1.2rem;
+  }
+
+  .music-player p {
+    font-size: 0.9rem;
+  }
+
+  .controls button {
+    width: 40px;
+  }
 }
